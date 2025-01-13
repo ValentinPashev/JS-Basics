@@ -1,9 +1,8 @@
 
-let area = 0
+
 
 function calculateFaceOfFigure(type, a, b){
-
-
+    let area = 0
     if (type == 'square'){
         area = a * a
         console.log(area.toFixed(3))
@@ -15,11 +14,12 @@ function calculateFaceOfFigure(type, a, b){
     } else if (type == 'circle') {
         let r = a
         let pi = Math.PI
-        area = pi * r
+        area = pi * (r * r)
         console.log(area.toFixed(3))
 
     }   else if (type == 'triangle'){
-        area = a * b
+        let h = b
+        area = 0.5 * (a * h)
         console.log(area.toFixed(3))
     }
 }
